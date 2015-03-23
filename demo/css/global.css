@@ -1,0 +1,113 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ECECEF;
+}
+img {
+	border: 0;
+}
+a {
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+ul:focus {
+	outline: 0;
+}
+textarea {
+	resize: none;
+	width: 100%;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.clear {
+	clear: both;
+}
+@media print {
+	.noprint {
+		display: none !important;
+	}
+}
+
+.wrapper {
+	padding: 10px;
+}
+.wrapper h3 {
+	margin: 0 0 10px 0;
+}
+.wrapper p {
+	margin: 10px 0 0 0;
+}
+.content-section {
+	overflow: hidden;
+	width: 800px;
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+}
+.list-wrap {
+	overflow: hidden;
+	width: 385px;
+}
+.list-scroll {
+	overflow: auto;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+	font-size: 13px;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+#selected {
+	list-style-type: none;
+	padding: 6px;
+	margin: 0;
+}
+#selected li {
+	margin: 0 0 6px 0;
+	cursor: pointer;
+}
+.node-remove {
+	display: inline-block;
+	overflow: hidden;
+	width: 13px;
+	height: 13px;
+	margin: 0 7px 0 0;
+	vertical-align: top;
+	background: url("../images/icon-remove.gif") no-repeat 0 0;
+	filter: Alpha(opacity=50);
+	opacity: 0.5;
+}
+#selected li:hover .node-remove, #selected li:focus .node-remove {
+	background-position: -13px 0;
+	filter: Alpha(opacity=100);
+	opacity: 1;
+}
+
+
+ul.fancytree-container {
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+span.fancytree-title {
+	margin-top: 2px;
+}
+span.fancytree-title, span.fancytree-active span.fancytree-title, span.fancytree-selected span.fancytree-title, span.fancytree-node:hover span.fancytree-title, .fancytree-container.fancytree-treefocus span.fancytree-active span.fancytree-title, .fancytree-container.fancytree-treefocus span.fancytree-selected span.fancytree-title  {
+	background-color: transparent;
+	border: 0;
+}
+span.fancytree-selected span.fancytree-title {
+	font-weight: bold;
+}
+span.fancytree-folder span.fancytree-icon {
+	display: none;
+}
